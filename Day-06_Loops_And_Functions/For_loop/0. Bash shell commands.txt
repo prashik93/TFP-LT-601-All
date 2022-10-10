@@ -1,0 +1,652 @@
+
+     ############ Repetition practice problems with for loop ############
+
+## 3. Write a program that takes a input and determines if the number is a prime. START
+>>>>>
+#! /bin/bash/ -x
+
+echo "Enter a number :- "
+read num
+
+for (( i=2; i<=num/2; i++))
+do
+        res=$(( num%i ))
+        if [ $res -eq 0 ]
+        then
+                echo "$num is not a Prime number"
+                exit
+        fi
+done
+echo "$num is a Prime number"
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ls
+'0. Bash shell commands.txt'   factorial.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ touch prime_number.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ls
+'0. Bash shell commands.txt'   factorial.sh*   prime_number.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ nano prime_number.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ./prime_number.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+2
++ (( i=2 ))
++ (( i<=num/2 ))
++ echo '2 is a Prime number'
+2 is a Prime number
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ./prime_number.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+3
++ (( i=2 ))
++ (( i<=num/2 ))
++ echo '3 is a Prime number'
+3 is a Prime number
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ./prime_number.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+4
++ (( i=2 ))
++ (( i<=num/2 ))
++ res=0
++ '[' 0 -eq 0 ']'
++ echo '4 is not a Prime number'
+4 is not a Prime number
++ exit
+
+
+## 3. Write a program that takes a input and determines if the number is a prime. END
+
+
+
+
+## 4. Extend the program to take a range of number as input and output the Prime
+##     Numbers in that range. START
+>>>>>
+#! /bin/bash/ -x
+
+echo "Enter a number upto which you want a prime numbers :- "
+read num
+count=0
+
+for((n=2; n<=$num; n++))
+do
+        t=1
+        if [ $n -lt 2 ]
+        then
+                echo "Please give other numbers other than 0 & 1"
+        else
+                for((i=2; i<$n; i++))
+                do
+                        if (($n%i==0))
+                        then
+                                echo "$n is not a prime number"
+                                t=0
+                                break
+                        fi
+                done
+        if [ $t == 1 ]
+        then
+                echo "$n is a prime number"
+                count=`expr $count + 1`
+        fi
+fi
+done
+echo "Total prime numbers upto $num are $count"
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ls
+'0. Bash shell commands.txt'   factorial.sh*   prime_number.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ touch range_prime_numbers.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ls
+'0. Bash shell commands.txt'   prime_number.sh*
+ factorial.sh*                 range_prime_numbers.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ nano range_prime_numbers.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ./range_prime_numbers.sh
++ echo 'Enter a number upto which you want a prime numbers :- '
+Enter a number upto which you want a prime numbers :-
++ read num
+20
++ count=0
++ (( n=2 ))
++ (( n<=20 ))
++ t=1
++ '[' 2 -lt 2 ']'
++ (( i=2 ))
++ (( i<2 ))
++ '[' 1 == 1 ']'
++ echo '2 is a prime number'
+2 is a prime number
+++ expr 0 + 1
++ count=1
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 3 -lt 2 ']'
++ (( i=2 ))
++ (( i<3 ))
++ (( 3%i==0 ))
++ (( i++ ))
++ (( i<3 ))
++ '[' 1 == 1 ']'
++ echo '3 is a prime number'
+3 is a prime number
+++ expr 1 + 1
++ count=2
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 4 -lt 2 ']'
++ (( i=2 ))
++ (( i<4 ))
++ (( 4%i==0 ))
++ echo '4 is not a prime number'
+4 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 5 -lt 2 ']'
++ (( i=2 ))
++ (( i<5 ))
++ (( 5%i==0 ))
++ (( i++ ))
++ (( i<5 ))
++ (( 5%i==0 ))
++ (( i++ ))
++ (( i<5 ))
++ (( 5%i==0 ))
++ (( i++ ))
++ (( i<5 ))
++ '[' 1 == 1 ']'
++ echo '5 is a prime number'
+5 is a prime number
+++ expr 2 + 1
++ count=3
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 6 -lt 2 ']'
++ (( i=2 ))
++ (( i<6 ))
++ (( 6%i==0 ))
++ echo '6 is not a prime number'
+6 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 7 -lt 2 ']'
++ (( i=2 ))
++ (( i<7 ))
++ (( 7%i==0 ))
++ (( i++ ))
++ (( i<7 ))
++ (( 7%i==0 ))
++ (( i++ ))
++ (( i<7 ))
++ (( 7%i==0 ))
++ (( i++ ))
++ (( i<7 ))
++ (( 7%i==0 ))
++ (( i++ ))
++ (( i<7 ))
++ (( 7%i==0 ))
++ (( i++ ))
++ (( i<7 ))
++ '[' 1 == 1 ']'
++ echo '7 is a prime number'
+7 is a prime number
+++ expr 3 + 1
++ count=4
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 8 -lt 2 ']'
++ (( i=2 ))
++ (( i<8 ))
++ (( 8%i==0 ))
++ echo '8 is not a prime number'
+8 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 9 -lt 2 ']'
++ (( i=2 ))
++ (( i<9 ))
++ (( 9%i==0 ))
++ (( i++ ))
++ (( i<9 ))
++ (( 9%i==0 ))
++ echo '9 is not a prime number'
+9 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 10 -lt 2 ']'
++ (( i=2 ))
++ (( i<10 ))
++ (( 10%i==0 ))
++ echo '10 is not a prime number'
+10 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 11 -lt 2 ']'
++ (( i=2 ))
++ (( i<11 ))
++ (( 11%i==0 ))
++ (( i++ ))
++ (( i<11 ))
++ (( 11%i==0 ))
++ (( i++ ))
++ (( i<11 ))
++ (( 11%i==0 ))
++ (( i++ ))
++ (( i<11 ))
++ (( 11%i==0 ))
++ (( i++ ))
++ (( i<11 ))
++ (( 11%i==0 ))
++ (( i++ ))
++ (( i<11 ))
++ (( 11%i==0 ))
++ (( i++ ))
++ (( i<11 ))
++ (( 11%i==0 ))
++ (( i++ ))
++ (( i<11 ))
++ (( 11%i==0 ))
++ (( i++ ))
++ (( i<11 ))
++ (( 11%i==0 ))
++ (( i++ ))
++ (( i<11 ))
++ '[' 1 == 1 ']'
++ echo '11 is a prime number'
+11 is a prime number
+++ expr 4 + 1
++ count=5
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 12 -lt 2 ']'
++ (( i=2 ))
++ (( i<12 ))
++ (( 12%i==0 ))
++ echo '12 is not a prime number'
+12 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 13 -lt 2 ']'
++ (( i=2 ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ (( 13%i==0 ))
++ (( i++ ))
++ (( i<13 ))
++ '[' 1 == 1 ']'
++ echo '13 is a prime number'
+13 is a prime number
+++ expr 5 + 1
++ count=6
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 14 -lt 2 ']'
++ (( i=2 ))
++ (( i<14 ))
++ (( 14%i==0 ))
++ echo '14 is not a prime number'
+14 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 15 -lt 2 ']'
++ (( i=2 ))
++ (( i<15 ))
++ (( 15%i==0 ))
++ (( i++ ))
++ (( i<15 ))
++ (( 15%i==0 ))
++ echo '15 is not a prime number'
+15 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 16 -lt 2 ']'
++ (( i=2 ))
++ (( i<16 ))
++ (( 16%i==0 ))
++ echo '16 is not a prime number'
+16 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 17 -lt 2 ']'
++ (( i=2 ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ (( 17%i==0 ))
++ (( i++ ))
++ (( i<17 ))
++ '[' 1 == 1 ']'
++ echo '17 is a prime number'
+17 is a prime number
+++ expr 6 + 1
++ count=7
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 18 -lt 2 ']'
++ (( i=2 ))
++ (( i<18 ))
++ (( 18%i==0 ))
++ echo '18 is not a prime number'
+18 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 19 -lt 2 ']'
++ (( i=2 ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ (( 19%i==0 ))
++ (( i++ ))
++ (( i<19 ))
++ '[' 1 == 1 ']'
++ echo '19 is a prime number'
+19 is a prime number
+++ expr 7 + 1
++ count=8
++ (( n++ ))
++ (( n<=20 ))
++ t=1
++ '[' 20 -lt 2 ']'
++ (( i=2 ))
++ (( i<20 ))
++ (( 20%i==0 ))
++ echo '20 is not a prime number'
+20 is not a prime number
++ t=0
++ break
++ '[' 0 == 1 ']'
++ (( n++ ))
++ (( n<=20 ))
++ echo 'Total prime numbers upto 20 are 8'
+Total prime numbers upto 20 are 8
+
+## 4. Extend the program to take a range of number as input and output the Prime
+##     Numbers in that range. END
+
+
+
+
+
+
+
+
+
+
+## 5. Write a program that computes a factorial of a number taken as input.
+    5 Factorial – 5! = 1 * 2 * 3 * 4 * 5
+## START
+>>>>>
+#! /bin/bash/ -x
+
+echo "Enter a number :- "
+read num
+
+fact=1
+
+for (( i=1;i<=num;i++ ))
+do
+        fact=$((fact*i))
+done
+
+echo $fact
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop
+$ ls
+ Day-03_Assignment/                    Reverse/
+ Day-05_Sequences_Practice_Problems/   Review/
+ Day-06_Loops_And_Functions/          'Sahil Desktop - Shortcut.lnk'*
+ Demo/                                 TFP-LT-601/
+ Demo2/                                TFP-LT-601-1/
+ Documents/                            delete2/
+'New Volume (E) - Shortcut.lnk'*       desktop.ini
+'New folder'/                          temp/
+ Postman.lnk*                          temp2/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop
+$ cd Day-06_Loops_And_Functions/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ ls
+loops.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ mkdir For_loop While_loop
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ ls
+For_loop/  While_loop/  loops.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ cd For_loop/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ls
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ touch factorial.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ls
+factorial.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ nano factorial.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ./factorial.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+5
++ fact=1
++ (( i=1 ))
++ (( i<=num ))
++ fact=1
++ (( i++  ))
++ (( i<=num ))
++ fact=2
++ (( i++  ))
++ (( i<=num ))
++ fact=6
++ (( i++  ))
++ (( i<=num ))
++ fact=24
++ (( i++  ))
++ (( i<=num ))
++ fact=120
++ (( i++  ))
++ (( i<=num ))
++ echo 120
+120
+
+## 5. Write a program that computes a factorial of a number taken as input.
+    5 Factorial – 5! = 1 * 2 * 3 * 4 * 5
+## END

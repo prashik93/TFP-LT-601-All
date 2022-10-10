@@ -1,0 +1,73 @@
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop
+$ ls
+ Day-03_Assignment/                    Reverse/
+ Day-05_Sequences_Practice_Problems/   Review/
+ Day-06_Loops_And_Functions/          'Sahil Desktop - Shortcut.lnk'*
+ Demo/                                 TFP-LT-601/
+ Demo2/                                TFP-LT-601-1/
+ Documents/                            delete2/
+'New Volume (E) - Shortcut.lnk'*       desktop.ini
+'New folder'/                          temp/
+ Postman.lnk*                          temp2/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop
+$ cd Day-06_Loops_And_Functions/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ ls
+loops.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ mkdir For_loop While_loop
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ ls
+For_loop/  While_loop/  loops.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ cd For_loop/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ls
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ touch factorial.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ls
+factorial.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ nano factorial.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/For_loop
+$ ./factorial.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+5
++ fact=1
++ (( i=1 ))
++ (( i<=num ))
++ fact=1
++ (( i++  ))
++ (( i<=num ))
++ fact=2
++ (( i++  ))
++ (( i<=num ))
++ fact=6
++ (( i++  ))
++ (( i<=num ))
++ fact=24
++ (( i++  ))
++ (( i<=num ))
++ fact=120
++ (( i++  ))
++ (( i<=num ))
++ echo 120
+120
+
+## 5. Write a program that computes a factorial of a number taken as input.
+    5 Factorial – 5! = 1 * 2 * 3 * 4 * 5
+## END

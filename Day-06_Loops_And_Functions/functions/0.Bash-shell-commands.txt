@@ -1,0 +1,832 @@
+## 1. Help user find degF or degC based on their Conversion Selection. Use
+      Case Statement and ensure that the inputs are within the Freezing Point (
+      0 °C / 32 °F ) and the Boiling Point of Water ( 100 °C / 212 °F )
+      a. degF = (degC * 9/5) + 32    b. degC = (degF – 32) * 5/9
+## START
+>>>>>
+###### Using case
+#! /bin/bash/ -x
+
+echo " 1. Convert Celsius to Fahrenheit "
+echo " 2. Convert Fahrenheit to Celsius "
+echo " Your choice( 1 0r 2 ) :- "
+
+read ch
+
+function checkTemperature(){
+
+        case $ch in
+                1)
+                        echo " Enter temperature in Celsius :- "
+                        read temp
+                        fahrenheit=$((180*temp/100 + 32))
+                        echo $fahrenheit
+                ;;
+                2)
+                        echo " Enter temperature in Fahrenheit :- "
+                        read temp
+                        celsius=$(( (($temp-32)*5/9) ))
+                        echo $celsius
+                ;;
+                *)
+                        echo "Wrong Choice"
+                ;;
+        esac
+}
+
+checkTemperature
+
+
+###### Using if-else
+
+
+#! /bin/bash/ -x
+
+echo " 1. Convert Celsius to Fahrenheit "
+echo " 2. Convert Fahrenheit to Celsius "
+echo " Your choice( 1 0r 2 ) :- "
+
+read ch
+
+if [ $ch -eq 1 ]
+then
+        echo " Enter temperature in Celsius :- "
+        read temp
+        fahrenheit=$((180*temp/100 + 32))
+        echo $fahrenheit
+
+elif [ $ch -eq 2 ]
+then
+        echo " Enter temperature in Fahrenheit :- "
+        read temp
+        celsius=$(( (($temp-32)*5/9) ))
+        echo $celsius
+else
+        echo "Wrong Choice"
+
+fi
+
+>>>>>
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ ls
+'0. Bash shell commands.txt'   For_loop/   While_loop/   loops.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ mkdir functions
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ ls
+'0. Bash shell commands.txt'   For_loop/   While_loop/   functions/   loops.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions
+$ cd functions/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ touch temp_conversion.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ls
+temp_conversion.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ nano temp_conversion.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./temp_conversion.sh
++ echo ' 1. Convert Celsius to Fahrenheit '
+ 1. Convert Celsius to Fahrenheit
++ echo ' 2. Convert Fahrenheit to Celsius '
+ 2. Convert Fahrenheit to Celsius
++ echo ' Your choice( 1 0r 2 ) :- '
+ Your choice( 1 0r 2 ) :-
++ read ch
+1
++ '[' 1 -eq 1 ']'
++ echo ' Enter temperature in Celsius :- '
+ Enter temperature in Celsius :-
++ read temp
+20
++ fahrenheit=68
++ echo 68
+68
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./temp_conversion.sh
++ echo ' 1. Convert Celsius to Fahrenheit '
+ 1. Convert Celsius to Fahrenheit
++ echo ' 2. Convert Fahrenheit to Celsius '
+ 2. Convert Fahrenheit to Celsius
++ echo ' Your choice( 1 0r 2 ) :- '
+ Your choice( 1 0r 2 ) :-
++ read ch
+2
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ echo ' Enter temperature in Fahrenheit :- '
+ Enter temperature in Fahrenheit :-
++ read temp
+40
++ celsius=4
++ echo 4
+4
+
+## 1. Help user find degF or degC based on their Conversion Selection. Use
+      Case Statement and ensure that the inputs are within the Freezing Point (
+      0 °C / 32 °F ) and the Boiling Point of Water ( 100 °C / 212 °F )
+      a. degF = (degC * 9/5) + 32    b. degC = (degF – 32) * 5/9
+## END
+
+
+
+## 2. Write a function to check if the two numbers are Palindromes.   START
+>>>>>
+#! /bin/bash/ -x
+
+echo "Enter first number :- "
+echo "Enter second number :- "
+
+read num1
+read num2
+
+function palindromeCheck(){
+        if [ $num1 -eq $num2 ]
+        then
+                echo "Palindrome"
+        else
+                echo "Not Palindrome"
+        fi
+}
+
+palindromeCheck
+
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ls
+0.Bash-shell-commands.txt  temp_conversion.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ touch palindrome.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ls
+0.Bash-shell-commands.txt  palindrome.sh  temp_conversion.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ nano palindrome.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./palindrome.sh
++ echo 'Enter first number :- '
+Enter first number :-
++ echo 'Enter second number :- '
+Enter second number :-
++ read num1
+123
++ read num2
+123
++ palindromeCheck
++ '[' 123 -eq 123 ']'
++ echo Palindrome
+Palindrome
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./palindrome.sh
++ echo 'Enter first number :- '
+Enter first number :-
++ echo 'Enter second number :- '
+Enter second number :-
++ read num1
+123
++ read num2
+321
++ palindromeCheck
++ '[' 123 -eq 321 ']'
++ echo 'Not Palindrome'
+Not Palindrome
+
+## 2. Write a function to check if the two numbers are Palindromes.   END
+
+
+
+
+## 3. Take a number from user and check if the number is a Prime then show that its palindrome is also prime
+     a. Write function check if number is Prime       b. Write function to get the Palindrome
+     c. Check if the Palindrome number is also prime
+##  START
+>>>>>
+#! /bin/bash/ -x
+
+echo " 1.To check number is prime or not :- "
+echo " 2.To check number is palindrome or not :- "
+
+read ch
+
+case $ch in
+        1)
+                echo "Check Number is prime or not---------------------"
+                echo "Enter number :- "
+                read num
+                function prime(){
+                        for((i=2; i<=$num/2; i++))
+                        do
+                                res=$(( num%i ))
+                                if [ $res -eq 0 ]
+                                then
+                                        echo "$num is not a prime number"
+                                        exit
+                                fi
+                        done
+                        echo "$num is a prime number"
+                }
+                prime
+        ;;
+        2)
+                echo "Check NUmber palindrome or not-------------------"
+                echo "Enter number :- "
+                read num
+
+                temp=$num
+                rev=0
+                function palindrome(){
+                        while [[ $num -gt 0 ]]
+                        do
+                                rem=$((num%10))
+                                rev=$(( (($rev*10)+$rem) ))
+                                num=$((num/10))
+                        done
+                        if [ $temp -eq $rev ]
+                        then
+                                echo "$num is palindrome"
+                        else
+                                echo "$num is not palindrome"
+                        fi
+                }
+                palindrome
+        ;;
+	3)
+                echo "Check palindrome number is prime or not"
+                echo "Enter palindrome number :- "
+                read num
+
+                temp=$num
+                rev=0
+                while [[ num -gt 0 ]]
+                do
+                        rem=$((num%10))
+                        rev=$(( (($rev*10)+$rem) ))
+                        num=$((num/10))
+                done
+                if [ $temp -eq $rev ]
+                then
+                        echo "$num is palindrome"
+                        pal=$rev
+
+                        for ((i=2; i<=$pal/2; i++))
+                        do
+                                res=$(( $pal%i ))
+                                if [ $res -eq 0 ]
+                                then
+                                        echo "$pal is not prime number"
+                                        exit
+                                fi
+                        done
+                        echo "$pal is prime number"
+
+                else
+                        echo "$num is not palindrome"
+                fi
+        ;;
+        *)
+                echo "Choose between 1 to 3"
+        ;;
+esac
+
+
+
+>>>>>
+#a. Prime
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ls
+0.Bash-shell-commands.txt  palindrome.sh*  temp_conversion.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ touch prime_palindrome.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ls
+0.Bash-shell-commands.txt  prime_palindrome.sh
+palindrome.sh*             temp_conversion.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ nano prime_palindrome.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./prime_palindrome.sh
++ echo ' Enter a number :- '
+ Enter a number :-
++ read num
+2
++ prime
++ (( i=2 ))
++ (( i<=2/2 ))
++ echo '2 is a prime number'
+2 is a prime number
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./prime_palindrome.sh
++ echo ' Enter a number :- '
+ Enter a number :-
++ read num
+4
++ prime
++ (( i=2 ))
++ (( i<=4/2 ))
++ res=0
++ '[' 0 -eq 0 ']'
++ echo '4 is not a prime number'
+4 is not a prime number
++ exit
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./prime_palindrome.sh
++ echo ' Enter a number :- '
+ Enter a number :-
++ read num
+7
++ prime
++ (( i=2 ))
++ (( i<=7/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=7/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=7/2 ))
++ echo '7 is a prime number'
+7 is a prime number
+
+#b. Palindrome
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./prime_palindrome.sh
++ echo ' 1.To check number is prime or not :- '
+ 1.To check number is prime or not :-
++ echo ' 2.To check number is palindrome or not :- '
+ 2.To check number is palindrome or not :-
++ read ch
+2
++ case $ch in
++ echo 'Check NUmber palindrome or not-------------------'
+Check NUmber palindrome or not-------------------
++ echo 'Enter number :- '
+Enter number :-
++ read num
+121
++ temp=121
++ rev=0
++ palindrome
++ [[ 121 -gt 0 ]]
++ rem=1
++ rev=1
++ num=12
++ [[ 12 -gt 0 ]]
++ rem=2
++ rev=12
++ num=1
++ [[ 1 -gt 0 ]]
++ rem=1
++ rev=121
++ num=0
++ [[ 0 -gt 0 ]]
++ '[' 121 -eq 121 ']'
++ echo '0 is palindrome'
+0 is palindrome
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./prime_palindrome.sh
++ echo ' 1.To check number is prime or not :- '
+ 1.To check number is prime or not :-
++ echo ' 2.To check number is palindrome or not :- '
+ 2.To check number is palindrome or not :-
++ read ch
+2
++ case $ch in
++ echo 'Check NUmber palindrome or not-------------------'
+Check NUmber palindrome or not-------------------
++ echo 'Enter number :- '
+Enter number :-
++ read num
+123
++ temp=123
++ rev=0
++ palindrome
++ [[ 123 -gt 0 ]]
++ rem=3
++ rev=3
++ num=12
++ [[ 12 -gt 0 ]]
++ rem=2
++ rev=32
++ num=1
++ [[ 1 -gt 0 ]]
++ rem=1
++ rev=321
++ num=0
++ [[ 0 -gt 0 ]]
++ '[' 123 -eq 321 ']'
++ echo '0 is not palindrome'
+0 is not palindrome
+
+#c. Palindrome-prime
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./prime_palindrome.sh
++ echo ' 1.To check number is prime or not :- '
+ 1.To check number is prime or not :-
++ echo ' 2.To check number is palindrome or not :- '
+ 2.To check number is palindrome or not :-
++ echo ' 3.To check palindrome number is also prime or not :- '
+ 3.To check palindrome number is also prime or not :-
++ read ch
+3
++ case $ch in
++ echo 'Check palindrome number is prime or not'
+Check palindrome number is prime or not
++ echo 'Enter palindrome number :- '
+Enter palindrome number :-
++ read num
+121
++ temp=121
++ rev=0
++ [[ num -gt 0 ]]
++ rem=1
++ rev=1
++ num=12
++ [[ num -gt 0 ]]
++ rem=2
++ rev=12
++ num=1
++ [[ num -gt 0 ]]
++ rem=1
++ rev=121
++ num=0
++ [[ num -gt 0 ]]
++ '[' 121 -eq 121 ']'
++ echo '0 is palindrome'
+0 is palindrome
++ pal=121
++ (( i=2 ))
++ (( i<=121/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=121/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=121/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=121/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=121/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=121/2 ))
++ res=2
++ '[' 2 -eq 0 ']'
++ (( i++ ))
++ (( i<=121/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=121/2 ))
++ res=4
++ '[' 4 -eq 0 ']'
++ (( i++ ))
++ (( i<=121/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=121/2 ))
++ res=0
++ '[' 0 -eq 0 ']'
++ echo '121 is not prime number'
+121 is not prime number
++ exit
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-06_Loops_And_Functions/functions
+$ ./prime_palindrome.sh
++ echo ' 1.To check number is prime or not :- '
+ 1.To check number is prime or not :-
++ echo ' 2.To check number is palindrome or not :- '
+ 2.To check number is palindrome or not :-
++ echo ' 3.To check palindrome number is also prime or not :- '
+ 3.To check palindrome number is also prime or not :-
++ read ch
+3
++ case $ch in
++ echo 'Check palindrome number is prime or not'
+Check palindrome number is prime or not
++ echo 'Enter palindrome number :- '
+Enter palindrome number :-
++ read num
+131
++ temp=131
++ rev=0
++ [[ num -gt 0 ]]
++ rem=1
++ rev=1
++ num=13
++ [[ num -gt 0 ]]
++ rem=3
++ rev=13
++ num=1
++ [[ num -gt 0 ]]
++ rem=1
++ rev=131
++ num=0
++ [[ num -gt 0 ]]
++ '[' 131 -eq 131 ']'
++ echo '0 is palindrome'
+0 is palindrome
++ pal=131
++ (( i=2 ))
++ (( i<=131/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=2
++ '[' 2 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=3
++ '[' 3 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=5
++ '[' 5 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=5
++ '[' 5 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=3
++ '[' 3 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=5
++ '[' 5 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=10
++ '[' 10 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=11
++ '[' 11 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=5
++ '[' 5 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=11
++ '[' 11 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=3
++ '[' 3 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=12
++ '[' 12 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=5
++ '[' 5 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=17
++ '[' 17 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=11
++ '[' 11 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=5
++ '[' 5 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=21
++ '[' 21 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=16
++ '[' 16 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=11
++ '[' 11 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=6
++ '[' 6 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=23
++ '[' 23 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=19
++ '[' 19 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=15
++ '[' 15 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=11
++ '[' 11 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=7
++ '[' 7 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=3
++ '[' 3 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=32
++ '[' 32 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=29
++ '[' 29 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=26
++ '[' 26 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=23
++ '[' 23 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=20
++ '[' 20 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=17
++ '[' 17 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=14
++ '[' 14 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=11
++ '[' 11 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=8
++ '[' 8 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=5
++ '[' 5 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=2
++ '[' 2 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=43
++ '[' 43 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=41
++ '[' 41 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=39
++ '[' 39 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=37
++ '[' 37 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=35
++ '[' 35 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=33
++ '[' 33 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=31
++ '[' 31 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=29
++ '[' 29 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=27
++ '[' 27 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=25
++ '[' 25 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=23
++ '[' 23 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=21
++ '[' 21 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=19
++ '[' 19 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=17
++ '[' 17 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=15
++ '[' 15 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=13
++ '[' 13 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=11
++ '[' 11 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=9
++ '[' 9 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=7
++ '[' 7 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=5
++ '[' 5 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=3
++ '[' 3 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ res=1
++ '[' 1 -eq 0 ']'
++ (( i++ ))
++ (( i<=131/2 ))
++ echo '131 is prime number'
+131 is prime number
+
+
+## 3. Take a number from user and check if the number is a Prime then show that its palindrome is also prime
+     a. Write function check if number is Prime       b. Write function to get the Palindrome
+     c. Check if the Palindrome number is also prime
+##  END
+
+
+
+
+
