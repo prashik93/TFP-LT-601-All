@@ -1,0 +1,454 @@
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop
+$ cd E:
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e
+$ ls
+'!qhlogs.doc'     Documents/                 Projects/
+'$RECYCLE.BIN'/  'Installed Applications'/  'System Volume Informati
+ BridgeLabz/     'New folder'/               Videos/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e
+$ cd BridgeLabz/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz
+$ ls
+'Notepad files of commands'/   PDF/   TFP-LT-601/   TFP-LT-601-2/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz
+$ cd TFP-LT-601
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz/TFP-LT-601
+$ ls
+TFP-LT-601/  TFP-LT-601-1/  gitDemo/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz/TFP-LT-601
+$ ls TFP-LT-601
+firstfile.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz/TFP-LT-601
+$ cd gitDemo/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz/TFP-LT-601/gitDemo (mast
+$ cd ..
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz/TFP-LT-601
+$ ls gitDemo/
+firstfile.sh  shellScript/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz/TFP-LT-601
+$ cd ~
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~
+$ cd Desktop/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop
+$ mkdir Review
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop
+$ ls
+ Demo/                             Review/
+ Demo2/                           'Sahil Desktop - Shortcut.lnk'*
+ Documents/                        TFP-LT-601/
+'New Volume (E) - Shortcut.lnk'*   TFP-LT-601-1/
+'New folder'/                      desktop.ini
+ Postman.lnk*                      temp/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop
+$ cd Review/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review
+$ mkdir gitDemo
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review
+$ ls
+gitDemo/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review
+$ cd gitDemo/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/gitDemo
+$ git init
+Initialized empty Git repository in C:/Users/INTEL/Desktop/Review/gi/.git/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/gitDemo (master)
+$ cd ..
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review
+$ git clone https://github.com/prashik93/Reverse-a-number.git
+Cloning into 'Reverse-a-number'...
+warning: You appear to have cloned an empty repository.
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review
+$ ls
+Reverse-a-number/  gitDemo/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review
+$ cd Reverse-a-number/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ ls
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ touch reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ ls
+reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ nano reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ python reverse.py
+  File "C:\Users\INTEL\Desktop\Review\Reverse-a-number\reverse.py", 10
+    echo ($rev)
+          ^
+SyntaxError: invalid syntax
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ nano reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ ls
+reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ touch reverse.txt
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ nano reverse.txt
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ nano reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ ls
+reverse.py  reverse.txt
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git pull origin master
+fatal: couldn't find remote ref master
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git remote -v
+origin  https://github.com/prashik93/Reverse-a-number.git (fetch)
+origin  https://github.com/prashik93/Reverse-a-number.git (push)
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git remote add origin 'https://github.com/prashik93/Reverse-a-numbt'
+error: remote origin already exists.
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git pull origin master
+fatal: couldn't find remote ref master
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        reverse.py
+        reverse.txt
+
+nothing added to commit but untracked files present (use "git add" tck)
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git add reverse.py
+warning: in the working copy of 'reverse.py', LF will be replaced by the next time Git touches it
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   reverse.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        reverse.txt
+
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git commit -m "[prashik]first commit"
+[master (root-commit) 4d369cb] [prashik]first commit
+ 1 file changed, 10 insertions(+)
+ create mode 100644 reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        reverse.txt
+
+nothing added to commit but untracked files present (use "git add" tck)
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/prashik93/Reverse-a-number.git
+ * [new branch]      master -> master
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ ls
+reverse.py  reverse.txt
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ rm -rf reverse.txt
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ ls
+reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ nano reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git pull origin master
+From https://github.com/prashik93/Reverse-a-number
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directo
+        modified:   reverse.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git add .
+warning: in the working copy of 'reverse.py', LF will be replaced by the next time Git touches it
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git commit -m "[prashik]changes in code"
+[master a269408] [prashik]changes in code
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 382 bytes | 382.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/prashik93/Reverse-a-number.git
+   4d369cb..a269408  master -> master
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ nano reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ nano reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git add .
+warning: in the working copy of 'reverse.py', LF will be replaced by the next time Git touches it
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git commit -m "[prashik]again made some changes in code"
+[master 23be2e0] [prashik]again made some changes in code
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 457 bytes | 457.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/prashik93/Reverse-a-number.git
+   a269408..23be2e0  master -> master
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ ls
+reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ nano reverse.py
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ history | grep -i git | grep -v history
+  260  mkdir gitDemo
+  262  cd gitDemo
+  264  git init
+  268  git clone 'https://github.com/edurekavivekh/linux-content.git
+  269  git clone 'https://github.com/edurekavivekh/linux-content.git
+  272  ls gitDemo/
+  454  cd gitDemo/
+  456  git log
+  457  git log | grep -i commit
+  458  git log | grep -i commit | grep -v '\['
+  459  git log | grep -i commit | grep -v '\[' | awk '{print $2}'
+  460  git log | grep -i commit | grep -v '\[' | awk -v var='a020d295d0090e1e66c23d69670a' '$2==var {print $2}'
+  461  git log | grep -i commit | grep -v '\[' | awk -v var='a020d295d0090e1e66c23d69670a' '$2==var {print NR}'
+  462  git rebase -iHEAD~6
+  463  git rebase -i HEAD~6
+  464  git rebase --continue
+  465  git status
+  467  git status
+  468  git rebase --continue
+  469  git add .
+  470  git status
+  471  git commit -m "[prashik]rebase problem solved"
+  472  git status
+  473  git pull origin master
+  474  git rebase --continue
+  475  git status
+  478  git status
+  480  git add firstfile.sh
+  481  git status
+  482  git rebase --continue
+  485  git add firstfile.sh
+  486  git commit -m "[prashik]conflict solved again"
+  487  git push origin master
+  488  git status
+  489  git commit --amend
+  490  git status
+  491  git rebase --continue
+  494  git status
+  495  git rebase --edit-todo
+  496  git rebase --continue
+  497  git status
+  498  git rebase --abort
+  499  git status
+  500  git log
+  508  cd gitDemo/
+  510  ls gitDemo/
+  516  mkdir gitDemo
+  518  cd gitDemo/
+  519  git init
+  521  git clone https://github.com/prashik93/Reverse-a-number.git
+  535  git pull origin master
+  536  git remote -v
+  537  git remote add origin 'https://github.com/prashik93/Reverse-a
+  538  git pull origin master
+  539  git status
+  540  git add reverse.py
+  541  git status
+  542  git commit -m "[prashik]first commit"
+  543  git status
+  544  git push origin master
+  549  git pull origin master
+  550  git status
+  551  git add .
+  552  git commit -m "[prashik]changes in code"
+  553  git push origin master
+  556  git add .
+  557  git commit -m "[prashik]again made some changes in code"
+  558  git push origin master
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ ps
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMM
+     1616       1    1616      14772  ?         197609 08:01:32 /usr
+     1617    1616    1617      11296  pty1      197609 08:01:32 /usr
+     1325    1324    1325      13508  pty0      197609 07:13:14 /usr
+     1324       1    1324      12988  ?         197609 07:13:13 /usr
+     1693    1325    1693       3560  pty0      197609 08:24:49 /usr
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ ps | grep -i bash
+     1617    1616    1617      11296  pty1      197609 08:01:32 /usr
+     1325    1324    1325      13508  pty0      197609 07:13:14 /usr
+     1699    1325    1698       9760  pty0      197609 08:25:06 /usr
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Review/Reverse-a-number (mas
+$ cd ~
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~
+$ cd E:
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e
+$ cd BridgeLabz/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz
+$ ls
+'Notepad files of commands'/   PDF/   TFP-LT-601/   TFP-LT-601-2/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz
+$ ls TFP-LT-601
+TFP-LT-601/  TFP-LT-601-1/  gitDemo/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz
+$ cd TFP-LT-601
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz/TFP-LT-601
+$ ls
+TFP-LT-601/  TFP-LT-601-1/  gitDemo/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz/TFP-LT-601
+$ ls TFP-LT-601
+firstfile.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 /e/BridgeLabz/TFP-LT-601
+$ cd ~
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~
+$ cd Desktop/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop
+$ cd demo
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/demo (master)
+$ ls
+a.pdf  background.py     c.pdf          linux-content/  test1.txt
+b.pdf  background222.py  createfolder/  pqr.txt         xyz.txt
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/demo (master)
+$ cd linux-content/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/demo/linux-content (master)
+$ ls
+README.md  access.log  linux_chit_sheet.pdf     sleep.exe.stackdump
+a.pdf      data.csv    linux_problem_sheet.pdf
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/demo/linux-content (master)
+$ cat data.csv
+Id EmployeeName JobTitle        BasePay OvertimePay OtherPay TotalPanefits
+1  NATHANIEL    GM              167411  0           400184   567595
+2  GARY         CAPTAIN         155966  245131      137811   538909
+3  ALBERT       CAPTAIN         212739  106088      16452    335279
+4  CHRISTOPHER  MECHANIC        77916   56120       198306   332343
+5  PATRICK      DEPUTYCHIEF     134401  9737        182234   326373
+6  DAVID        ASSTDEPUTY      118602  8601        189082   316285
+7  ALSON        BATTALIONCHIEF  92492   89062       134426   315981
+8  DAVID        DEPUTYDIRECTOR  256576  0           51322    307899
+10 JOANNE       CHIEF           285262  0           17115    302377
+12 PATRICIA     CAPTAIN         99722   87082       110804   297608
+13 EDWARD       EXECUTIVE       294580  0           0        294580
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/demo/linux-content (master)
+$ cat data.csv | grep -i gm |
+> ^C
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/demo/linux-content (master)
+$ cat data.csv | grep -i gm
+1  NATHANIEL    GM              167411  0           400184   567595
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/demo/linux-content (master)
+$ cat data.csv | grep -i gm | awk '{print $4}'
+167411
+
