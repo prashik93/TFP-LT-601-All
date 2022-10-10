@@ -1,0 +1,75 @@
+
+## Move files from one folder to the respective folders. START
+>>>>>
+#! /bin/bash -x
+
+folderName=""
+function filesFunction(){
+        echo `ls *.txt`
+}
+
+for files in `filesFunction`
+do
+        echo $files
+        folderName=`echo $files | awk -F. '{print $1}'`
+        echo $folderName
+        if [ -d $folderName ]
+                then
+                        rm -r $folderName
+        fi
+        mkdir $folderName
+        mv $files $folderName/$files
+done
+>>>>>
+## Move files from one folder to the respective folders. END
+
+
+
+
+
+## Check if a folder exists or not. If it's not present, create it. START
+>>>>>
+#! /bin/bash/ -x
+
+echo "Enter folder name which you want to create :- "
+read usrInput
+
+if [ -d $usrInput ]             # -d Check the folder exist or not
+then
+        echo "Folder already exist"
+else
+        mkdir $usrInput
+fi
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/TFP-LT-601-All/gitDemo/Day-03_Linux_Commands (linux-commands)
+$ touch checkFolder.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/TFP-LT-601-All/gitDemo/Day-03_Linux_Commands (linux-commands)
+$ ls
+checkFolder.sh  movefiles.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/TFP-LT-601-All/gitDemo/Day-03_Linux_Commands (linux-commands)
+$ nano checkFolder.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/TFP-LT-601-All/gitDemo/Day-03_Linux_Commands (linux-commands)
+$ ./checkFolder.sh
++ echo 'Enter folder name which you want to create :- '
+Enter folder name which you want to create :-
++ read usrInput
+xyz
++ '[' -d xyz ']'
++ mkdir xyz
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/TFP-LT-601-All/gitDemo/Day-03_Linux_Commands (linux-commands)
+$ ls
+checkFolder.sh*  movefiles.sh*  xyz/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/TFP-LT-601-All/gitDemo/Day-03_Linux_Commands (linux-commands)
+$ rm -r xyz
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/TFP-LT-601-All/gitDemo/Day-03_Linux_Commands (linux-commands)
+$ ls
+checkFolder.sh*  movefiles.sh*
+
+## Check if a folder exists or not. If it's not present, create it. END
