@@ -1,0 +1,626 @@
+		## if elif else START ##
+
+## 1. Read a single digit number and write the number in word. START
+
+>>>
+#! /bin/bash/ -x
+
+read -p " Enter single digit number :- " number
+echo $number
+
+if [ $number -eq 0 ]
+then
+        echo "Zero"
+
+elif [ $number -eq 1 ]
+then
+        echo "One"
+
+elif [ $number -eq 2 ]
+then
+        echo "Two"
+
+elif [ $number -eq 3 ]
+then
+        echo "Three"
+
+elif [ $number -eq 4 ]
+then
+        echo "Four"
+
+elif [ $number -eq 5 ]
+then
+        echo "Five"
+
+elif [ $number -eq 6 ]
+then
+        echo "Six"
+
+elif [ $number -eq 7 ]
+then
+        echo "Seven"
+
+elif [ $number -eq 8 ]
+then
+        echo "Eight"
+
+elif [ $number -eq 9 ]
+then
+        echo "Nine"
+
+else
+        echo "Given number is not a single digit number"
+
+fi
+>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ls
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ touch rw_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ls
+rw_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ nano rw_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 0
++ echo 0
+0
++ '[' 0 -eq 0 ']'
++ echo Zero
+Zero
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 1
++ echo 1
+1
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ echo One
+One
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 2
++ echo 2
+2
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ echo Two
+Two
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 3
++ echo 3
+3
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ echo Three
+Three
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 4
++ echo 4
+4
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ echo Four
+Four
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 5
++ echo 5
+5
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ echo Five
+Five
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 6
++ echo 6
+6
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo Six
+Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 7
++ echo 7
+7
++ '[' 7 -eq 0 ']'
++ '[' 7 -eq 1 ']'
++ '[' 7 -eq 2 ']'
++ '[' 7 -eq 3 ']'
++ '[' 7 -eq 4 ']'
++ '[' 7 -eq 5 ']'
++ '[' 7 -eq 6 ']'
++ '[' 7 -eq 7 ']'
++ echo Seven
+Seven
+
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 8
++ echo 8
+8
++ '[' 8 -eq 0 ']'
++ '[' 8 -eq 1 ']'
++ '[' 8 -eq 2 ']'
++ '[' 8 -eq 3 ']'
++ '[' 8 -eq 4 ']'
++ '[' 8 -eq 5 ']'
++ '[' 8 -eq 6 ']'
++ '[' 8 -eq 7 ']'
++ '[' 8 -eq 8 ']'
++ echo Eight
+Eight
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 9
++ echo 9
+9
++ '[' 9 -eq 0 ']'
++ '[' 9 -eq 1 ']'
++ '[' 9 -eq 2 ']'
++ '[' 9 -eq 3 ']'
++ '[' 9 -eq 4 ']'
++ '[' 9 -eq 5 ']'
++ '[' 9 -eq 6 ']'
++ '[' 9 -eq 7 ']'
++ '[' 9 -eq 8 ']'
++ '[' 9 -eq 9 ']'
++ echo Nine
+Nine
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./rw_single_digit.sh
++ read -p ' Enter single digit number :- ' number
+ Enter single digit number :- 10
++ echo 10
+10
++ '[' 10 -eq 0 ']'
++ '[' 10 -eq 1 ']'
++ '[' 10 -eq 2 ']'
++ '[' 10 -eq 3 ']'
++ '[' 10 -eq 4 ']'
++ '[' 10 -eq 5 ']'
++ '[' 10 -eq 6 ']'
++ '[' 10 -eq 7 ']'
++ '[' 10 -eq 8 ']'
++ '[' 10 -eq 9 ']'
++ echo 'Given number is not a single digit number'
+Given number is not a single digit number
+
+## 1. Read a single digit number and write the number in word. END
+
+
+
+## 2. Read a Number and Display the week day (Sunday, Monday,...). START
+>>>>>
+#! /bin/bash/ -x
+
+echo "Enter a number :- "
+read num
+
+if [ $num -eq 1 ]
+then
+        echo "Sunday"
+
+elif [ $num -eq 2 ]
+then
+        echo "Monday"
+
+elif [ $num -eq 3 ]
+then
+        echo "Tuesday"
+
+elif [ $num -eq 4 ]
+then
+        echo "Wednesday"
+
+elif [ $num -eq 5 ]
+then
+        echo "Thursday"
+
+elif [ $num -eq 6 ]
+then
+        echo "Friday"
+
+elif [ $num -eq 7 ]
+then
+        echo "Saturday"
+
+else
+        echo "Enter number between 1 to 7"
+
+fi
+>>>>>
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ls
+'0.Bash shell commands .txt'   rw_single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ touch ds_week_day.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ls
+'0.Bash shell commands .txt'   ds_week_day.sh   rw_single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ nano ds_week_day.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+1
++ '[' 1 -eq 1 ']'
++ echo Sunday
+Sunday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+2
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ echo Monday
+Monday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+3
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ echo Tuesday
+Tuesday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+4
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ echo Wednesday
+Wednesday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+5
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ echo Thursday
+Thursday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo Friday
+Friday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+7
++ '[' 7 -eq 1 ']'
++ '[' 7 -eq 2 ']'
++ '[' 7 -eq 3 ']'
++ '[' 7 -eq 4 ']'
++ '[' 7 -eq 5 ']'
++ '[' 7 -eq 6 ']'
++ '[' 7 -eq 7 ']'
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+8
++ '[' 8 -eq 1 ']'
++ '[' 8 -eq 2 ']'
++ '[' 8 -eq 3 ']'
++ '[' 8 -eq 4 ']'
++ '[' 8 -eq 5 ']'
++ '[' 8 -eq 6 ']'
++ '[' 8 -eq 7 ']'
++ echo 'Enter number between 1 to 7'
+Enter number between 1 to 7
+
+## 2. Read a Number and Display the week day (Sunday, Monday,...). END
+
+
+
+## 3. Read a Number 1, 10, 100, 1000, etc and display unit, ten, hundred,... START
+>>>>>
+#! /bin/bash/ -x
+
+echo -p " Enter a Number :- "
+read num
+
+if [ $num -eq 1 ]
+then
+        echo "Unit"
+
+elif [ $num -eq 10 ]
+then
+        echo "Ten"
+
+elif [ $num -eq 100 ]
+then
+        echo "Hundred"
+
+elif [ $num -eq 1000 ]
+then
+        echo "Thousand"
+
+else
+        echo "Please enter 1, 10, 100 and 1000 only"
+fi
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_unit.sh
++ echo -p ' Enter a Number :- '
+-p  Enter a Number :-
++ read num
+1
++ '[' 1 -eq 1 ']'
++ echo Unit
+Unit
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_unit.sh
++ echo -p ' Enter a Number :- '
+-p  Enter a Number :-
++ read num
+10
++ '[' 10 -eq 1 ']'
++ '[' 10 -eq 10 ']'
++ echo Ten
+Ten
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_unit.sh
++ echo -p ' Enter a Number :- '
+-p  Enter a Number :-
++ read num
+100
++ '[' 100 -eq 1 ']'
++ '[' 100 -eq 10 ']'
++ '[' 100 -eq 100 ']'
++ echo Hundred
+Hundred
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_unit.sh
++ echo -p ' Enter a Number :- '
+-p  Enter a Number :-
++ read num
+1000
++ '[' 1000 -eq 1 ']'
++ '[' 1000 -eq 10 ']'
++ '[' 1000 -eq 100 ']'
++ '[' 1000 -eq 1000 ']'
++ echo Thousand
+Thousand
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./ds_unit.sh
++ echo -p ' Enter a Number :- '
+-p  Enter a Number :-
++ read num
+12
++ '[' 12 -eq 1 ']'
++ '[' 12 -eq 10 ']'
++ '[' 12 -eq 100 ']'
++ '[' 12 -eq 1000 ']'
++ echo 'Please enter 1, 10, 100 and 1000 only'
+Please enter 1, 10, 100 and 1000 only
+
+## 3. Read a Number 1, 10, 100, 1000, etc and display unit, ten, hundred,... END
+
+
+
+## 4. Enter 3 Numbers do following arithmetic operation and find the one that
+      is maximum and minimum
+      1. a + b * c          3. c + a / b
+      2. a % b + c          4. a * b + c
+## START
+>>>>>
+#! /bin/bash/ -x
+
+echo "Enter 3 numbers :- "
+read first
+echo $first
+read second
+echo $second
+read third
+echo $third
+
+operation_list=("$first_operation" "$second_operation" "$third_operation" "$fourth_operation")
+
+operation_list[0]=$(awk 'BEGIN {print '$first' + '$second' * '$third'}')
+operation_list[1]=$(awk 'BEGIN {print '$first' % '$second' + '$third'}')
+#operation_list[2]=$(awk 'BEGIN {print '$third' + (('$first'/'$second')) }')
+operation_list[2]=`expr $third + $first / $second`
+operation_list[3]=$(awk 'BEGIN {print '$first' * '$second' + '$third'}')
+
+echo "----------------------------"
+a=`expr $third + $first / $second`
+echo $a
+echo "----------------------------"
+
+echo ${operation_list[0]}
+echo ${operation_list[1]}
+echo ${operation_list[2]}
+echo ${operation_list[3]}
+
+
+max=0
+min=1000
+
+for num in ${operation_list[@]}
+do
+        if [ $num -gt $max ]
+        then
+                max=$num
+
+        elif [ $num -lt $min ]
+        then
+                min=$num
+
+        else
+                echo "Nothing to compare"
+        fi
+done
+
+echo "Maximum value :- $max"
+echo "Minimun value :- $min"
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ nano arithmetic_operation.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-elif-else
+$ ./arithmetic_operation.sh
++ echo 'Enter 3 numbers :- '
+Enter 3 numbers :-
++ read first
+1
++ echo 1
+1
++ read second
+5
++ echo 5
+5
++ read third
+8
++ echo 8
+8
++ operation_list=("$first_operation" "$second_operation" "$third_operation" "$fourth_operation")
+++ awk 'BEGIN {print 1 + 5 * 8}'
++ operation_list[0]=41
+++ awk 'BEGIN {print 1 % 5 + 8}'
++ operation_list[1]=9
+++ expr 8 + 1 / 5
++ operation_list[2]=8
+++ awk 'BEGIN {print 1 * 5 + 8}'
++ operation_list[3]=13
++ echo ----------------------------
+----------------------------
+++ expr 8 + 1 / 5
++ a=8
++ echo 8
+8
++ echo ----------------------------
+----------------------------
++ echo 41
+41
++ echo 9
+9
++ echo 8
+8
++ echo 13
+13
++ max=0
++ min=1000
++ for num in ${operation_list[@]}
++ '[' 41 -gt 0 ']'
++ max=41
++ for num in ${operation_list[@]}
++ '[' 9 -gt 41 ']'
++ '[' 9 -lt 1000 ']'
++ min=9
++ for num in ${operation_list[@]}
++ '[' 8 -gt 41 ']'
++ '[' 8 -lt 9 ']'
++ min=8
++ for num in ${operation_list[@]}
++ '[' 13 -gt 41 ']'
++ '[' 13 -lt 8 ']'
++ echo 'Nothing to compare'
+Nothing to compare
++ echo 'Maximum value :- 41'
+Maximum value :- 41
++ echo 'Minimun value :- 8'
+Minimun value :- 8
+
+## 4. Enter 3 Numbers do following arithmetic operation and find the one that
+      is maximum and minimum
+      1. a + b * c          3. c + a / b
+      2. a % b + c          4. a * b + c
+## END
+
+
+		## if elif else END ##

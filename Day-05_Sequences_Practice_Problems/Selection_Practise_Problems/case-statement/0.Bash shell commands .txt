@@ -1,0 +1,516 @@
+		
+		## case START ##
+
+## 1. Read a single digit number and write the number in word using Case START
+>>>>>
+#! /bin/bash/ -x
+
+echo -p "Enter a number :- "
+read num
+
+case $num in
+        0)
+        echo "Zero"
+        ;;
+        1)
+        echo "One"
+        ;;
+        2)
+        echo "Two"
+        ;;
+        3)
+        echo "Three"
+        ;;
+        4)
+        echo "Four"
+        ;;
+        5)
+        echo "Five"
+        ;;
+        6)
+        echo "Six"
+        ;;
+        7)
+        echo "Seven"
+        ;;
+        8)
+        echo "Eight"
+        ;;
+        9)
+        echo "Nine"
+        ;;
+        *)
+        echo "Please enter a single digit"
+        ;;
+esac
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ touch single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ls
+single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ nano single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./single_digit.sh
++ echo -p 'Enter a number :- '
+-p Enter a number :-
++ read num
+0
++ case $num in
++ echo 'Please enter a single digit'
+Please enter a single digit
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./single_digit.sh
++ echo -p 'Enter a number :- '
+-p Enter a number :-
++ read num
+1
++ case $num in
++ echo One
+One
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./single_digit.sh
++ echo -p 'Enter a number :- '
+-p Enter a number :-
++ read num
+2
++ case $num in
++ echo Two
+Two
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./single_digit.sh
++ echo -p 'Enter a number :- '
+-p Enter a number :-
++ read num
+3
++ case $num in
++ echo Three
+Three
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./single_digit.sh
++ echo -p 'Enter a number :- '
+-p Enter a number :-
++ read num
+4
++ case $num in
++ echo Four
+Four
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./single_digit.sh
++ echo -p 'Enter a number :- '
+-p Enter a number :-
++ read num
+5
++ case $num in
++ echo Five
+Five
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./single_digit.sh
++ echo -p 'Enter a number :- '
+-p Enter a number :-
++ read num
+6
++ case $num in
++ echo Six
+Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./single_digit.sh
++ echo -p 'Enter a number :- '
+-p Enter a number :-
++ read num
+7
++ case $num in
++ echo Seven
+Seven
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./single_digit.sh
++ echo -p 'Enter a number :- '
+-p Enter a number :-
++ read num
+8
++ case $num in
++ echo Eight
+Eight
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./single_digit.sh
++ echo -p 'Enter a number :- '
+-p Enter a number :-
++ read num
+9
++ case $num in
++ echo Nine
+Nine
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$  Enter a number :-
++ read num
+10
++ case $num in
++ echo 'Please enter a single digit'
+Please enter a single digit
+
+## 1. Read a single digit number and write the number in word using Case END
+
+
+
+## 2. Read a Number and Display the week day (Sunday, Monday,...). START
+>>>>>
+echo "Enter a number :- "
+read num
+
+case $num in
+        1)
+        echo "Sunday"
+        ;;
+        2)
+        echo "Monday"
+        ;;
+        3)
+        echo "Tuesday"
+        ;;
+        4)
+        echo "Wednesday"
+        ;;
+        5)
+        echo "Thursday"
+        ;;
+        6)
+        echo "Friday"
+        ;;
+        7)
+        echo "Saturday"
+        ;;
+        *)
+        echo "Please enter a number between 1 to 7"
+        ;;
+esac
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ls
+'0.Bash shell commands .txt'   single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ touch ds_week_day.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ls
+'0.Bash shell commands .txt'   ds_week_day.sh   single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ nano ds_week_day.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+1
++ case $num in
++ echo Sunday
+Sunday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+2
++ case $num in
++ echo Monday
+Monday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+3
++ case $num in
++ echo Tuesday
+Tuesday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+4
++ case $num in
++ echo Wednesday
+Wednesday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+5
++ case $num in
++ echo Thursday
+Thursday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+6
++ case $num in
++ echo Friday
+Friday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+7
++ case $num in
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_week_day.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+8
++ case $num in
++ echo 'Please enter a number between 1 to 7'
+Please enter a number between 1 to 7
+
+## 2. Read a Number and Display the week day (Sunday, Monday,...). END
+
+
+
+## 3. Read a Number 1, 10, 100, 1000, etc and display unit, ten, hundred,... START
+>>>>>
+#! /bin/bash/ -x
+
+echo "Enter a number :- "
+read num
+
+case $num in
+        1)
+        echo "Unit"
+        ;;
+        10)
+        echo "Ten"
+        ;;
+        100)
+        echo "Hundred"
+        ;;
+        1000)
+        echo "Thousand"
+        ;;
+        *)
+        echo "Please enter number like 1, 10 , 100 and 1000 only"
+esac
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ls
+'0.Bash shell commands .txt'   ds_week_day.sh*   single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ touch ds_unit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ls
+'0.Bash shell commands .txt'   ds_unit.sh   ds_week_day.sh*   single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ nano ds_unit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_unit.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+1
++ case $num in
++ echo Unit
+Unit
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_unit.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+10
++ case $num in
++ echo Ten
+Ten
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_unit.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+100
++ case $num in
++ echo Hundred
+Hundred
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_unit.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+1000
++ case $num in
++ echo Thousand
+Thousand
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./ds_unit.sh
++ echo 'Enter a number :- '
+Enter a number :-
++ read num
+123
++ case $num in
++ echo 'Please enter number like 1, 10 , 100 and 1000 only'
+Please enter number like 1, 10 , 100 and 1000 only
+
+## 3. Read a Number 1, 10, 100, 1000, etc and display unit, ten, hundred,... END
+
+
+
+## 4. Write a program that takes User Inputs and does Unit Conversion of
+      different Length units
+      1. Feet to Inch        3. Inch to Feet
+      2. Feet to Meter       4. Meter to Feet
+## START
+>>>>>
+
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ls
+'0.Bash shell commands .txt'   ds_unit.sh*   ds_week_day.sh*   single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ touch unit_conversion.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ls
+'0.Bash shell commands .txt'   ds_unit.sh*   ds_week_day.sh*   single_digit.sh*   unit_conversion.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ nano unit_conversion.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./unit_conversion.sh
++ echo '1. Feet to Inch'
+1. Feet to Inch
++ echo '2. Feet to Meter'
+2. Feet to Meter
++ echo '3. Inch to Feet'
+3. Inch to Feet
++ echo '4. Meter to Feet'
+4. Meter to Feet
++ read num
+1
++ case "$num" in
++ echo 'Enter value in feet :- '
+Enter value in feet :-
++ read value
+1
++ inch=12
++ echo '1 feet= 12 inch'
+1 feet= 12 inch
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./unit_conversion.sh
++ echo '1. Feet to Inch'
+1. Feet to Inch
++ echo '2. Feet to Meter'
+2. Feet to Meter
++ echo '3. Inch to Feet'
+3. Inch to Feet
++ echo '4. Meter to Feet'
+4. Meter to Feet
++ read num
+2
++ case "$num" in
++ echo 'Enter value in feet :- '
+Enter value in feet :-
++ read value
+4
++ meter_value=0.3048
+++ awk 'BEGIN {print 4 * 0.3048}'
++ meter=1.2192
++ echo '4 feet= 1.2192 meter'
+4 feet= 1.2192 meter
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./unit_conversion.sh
++ echo '1. Feet to Inch'
+1. Feet to Inch
++ echo '2. Feet to Meter'
+2. Feet to Meter
++ echo '3. Inch to Feet'
+3. Inch to Feet
++ echo '4. Meter to Feet'
+4. Meter to Feet
++ read num
+3
++ case "$num" in
++ echo 'Enter value in inch :- '
+Enter value in inch :-
++ read value
+1
++ inch_value=0.8333333
+++ awk 'BEGIN {print 1 * 0.8333333}'
++ feet=0.833333
++ echo '1 inch= 0.833333 feet'
+1 inch= 0.833333 feet
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/case-statement
+$ ./unit_conversion.sh
++ echo '1. Feet to Inch'
+1. Feet to Inch
++ echo '2. Feet to Meter'
+2. Feet to Meter
++ echo '3. Inch to Feet'
+3. Inch to Feet
++ echo '4. Meter to Feet'
+4. Meter to Feet
++ read num
+4
++ case "$num" in
++ echo 'Enter value in meter :- '
+Enter value in meter :-
++ read value
+1
++ feet_value=3.28084
+++ awk 'BEGIN {print 1 * 3.28084}'
++ feet=3.28084
++ echo '1 meter= 3.28084 feet'
+1 meter= 3.28084 feet
+
+
+## 4. Write a program that takes User Inputs and does Unit Conversion of
+      different Length units
+      1. Feet to Inch        3. Inch to Feet
+      2. Feet to Meter       4. Meter to Feet
+## END
+
+
+		## case END ##

@@ -1,0 +1,443 @@
+			
+			## if else START ##	
+
+## 1. Write a program that reads 5 Random 3 Digit values and then outputs the minimum
+##    and the maximum value. START
+>>>>>
+#! /bin/bash/ -x
+
+r1_num=$((RANDOM%900+100))
+echo $r1_num
+
+r2_num=$((RANDOM%900+100))
+echo $r2_num
+
+r3_num=$((RANDOM%900+100))
+echo $r3_num
+
+r4_num=$((RANDOM%900+100))
+echo $r4_num
+
+r5_num=$((RANDOM%900+100))
+echo $r5_num
+
+num_list=("$r1_num" "$r2_num" "$r3_num" "$r4_num" "$r5_num")
+
+for num in "$num_list"
+do
+        echo $num
+done
+
+max=0
+min=1000
+
+for num in "${num_list[@]}"
+do
+        if [ $num -gt $max ]
+        then
+                max=$num
+        fi
+
+        if [ $num -lt $min ]
+        then
+                min=$num
+        fi
+done
+
+echo "Maximum number among 5 is :- $max"
+echo "Minimun number among 5 is :- $min"
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems/if-else
+$ ./max_min_3digit.sh
++ r1_num=446
++ echo 446
+446
++ r2_num=644
++ echo 644
+644
++ r3_num=292
++ echo 292
+292
++ r4_num=288
++ echo 288
+288
++ r5_num=133
++ echo 133
+133
++ num_list=("$r1_num" "$r2_num" "$r3_num" "$r4_num" "$r5_num")
++ for num in "$num_list"
++ echo 446
+446
++ max=0
++ min=1000
++ for num in "${num_list[@]}"
++ '[' 446 -gt 0 ']'
++ max=446
++ '[' 446 -lt 1000 ']'
++ min=446
++ for num in "${num_list[@]}"
++ '[' 644 -gt 446 ']'
++ max=644
++ '[' 644 -lt 446 ']'
++ for num in "${num_list[@]}"
++ '[' 292 -gt 644 ']'
++ '[' 292 -lt 446 ']'
++ min=292
++ for num in "${num_list[@]}"
++ '[' 288 -gt 644 ']'
++ '[' 288 -lt 292 ']'
++ min=288
++ for num in "${num_list[@]}"
++ '[' 133 -gt 644 ']'
++ '[' 133 -lt 288 ']'
++ min=133
++ echo 'Maximum number among 5 is :- 644'
+Maximum number among 5 is :- 644
++ echo 'Minimun number among 5 is :- 133'
+Minimun number among 5 is :- 133
+
+
+## 1. Write a program that reads 5 Random 3 Digit values and then outputs the minimum
+##    and the maximum value. END
+
+
+
+
+## 2. Write a program that takes day and month from the command line and prints true if
+##    day of month is between March 20 and June 20, false otherwise.
+
+>>>>>
+#! /bin/bash/ -x
+
+read -p " Enter Date :- " date
+read -p " Enter Month :- " Month
+
+if (( (($Month==6 && $date<=20) || ($Month==3 && $date>=20)) || (($Month<6 && $date>0) && $Month>3) || (($Month>3 && $date>0) && $Month<6) && ($date<=31) ))
+then
+        echo $Month $date "True"
+else
+        echo "False"
+fi
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ls
+'0.Bash shell commands .txt'   coin_head_or_tail.sh*   max_min_3digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ touch day_of_month.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ls
+'0.Bash shell commands .txt'   coin_head_or_tail.sh*   day_of_month.sh   max_min_3digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ nano day_of_month.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 21
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 3
++ ((  ((3==6 && 21<=20) || (3==3 && 21>=20)) || ((3<6 && 21>0) && 3>3) || ((3>3 && 21>0) && 3<6) && (21<31)  ))
++ echo 3 21 True
+3 21 True
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 18
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 3
++ ((  ((3==6 && 18<=20) || (3==3 && 18>=20)) || ((3<6 && 18>0) && 3>3) || ((3>3 && 18>0) && 3<6) && (18<31)  ))
++ echo False
+False
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 21
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 4
++ ((  ((4==6 && 21<=20) || (4==3 && 21>=20)) || ((4<6 && 21>0) && 4>3) || ((4>3 && 21>0) && 4<6) && (21<31)  ))
++ echo 4 21 True
+4 21 True
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 12
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 4
++ ((  ((4==6 && 12<=20) || (4==3 && 12>=20)) || ((4<6 && 12>0) && 4>3) || ((4>3 && 12>0) && 4<6) && (12<31)  ))
++ echo 4 12 True
+4 12 True
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 21
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 6
++ ((  ((6==6 && 21<=20) || (6==3 && 21>=20)) || ((6<6 && 21>0) && 6>3) || ((6>3 && 21>0) && 6<6) && (21<31)  ))
++ echo False
+False
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 20
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 6
++ ((  ((6==6 && 20<=20) || (6==3 && 20>=20)) || ((6<6 && 20>0) && 6>3) || ((6>3 && 20>0) && 6<6) && (20<31)  ))
++ echo 6 20 True
+6 20 True
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 5
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 3
++ ((  ((3==6 && 5<=20) || (3==3 && 5>=20)) || ((3<6 && 5>0) && 3>3) || ((3>3 && 5>0) && 3<6) && (5<31)  ))
++ echo False
+False
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 5
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 6
++ ((  ((6==6 && 5<=20) || (6==3 && 5>=20)) || ((6<6 && 5>0) && 6>3) || ((6>3 && 5>0) && 6<6) && (5<31)  ))
++ echo 6 5 True
+6 5 True
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 19
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 6
++ ((  ((6==6 && 19<=20) || (6==3 && 19>=20)) || ((6<6 && 19>0) && 6>3) || ((6>3 && 19>0) && 6<6) && (19<31)  ))
++ echo 6 19 True
+6 19 True
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ nano day_of_month.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 31
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 3
++ ((  ((3==6 && 31<=20) || (3==3 && 31>=20)) || ((3<6 && 31>0) && 3>3) || ((3>3 && 31>0) && 3<6) && (31<=31)  ))
++ echo 3 31 True
+3 31 True
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./day_of_month.sh
++ read -p ' Enter Date :- ' date
+ Enter Date :- 31
++ read -p ' Enter Month :- ' Month
+ Enter Month :- 5
++ ((  ((5==6 && 31<=20) || (5==3 && 31>=20)) || ((5<6 && 31>0) && 5>3) || ((5>3 && 31>0) && 5<6) && (31<=31)  ))
++ echo 5 31 True
+5 31 True
+
+
+## 2. Write a program that takes day and month from the command line and prints true if
+##    day of month is between March 20 and June 20, false otherwise. END
+
+
+
+
+## 3. Write a program that takes a year as input and outputs the Year is a Leap Year or not
+##     a Leap Year. A Leap Year checks for 4 Digit Number, Divisible by 4 and not 100 unless
+##     divisible by 400.  START
+
+>>>>>
+#! /bin/bash/ -x
+
+read -p " Enter year to check wether it is Leap or Not :- " Year
+
+if (( (($Year % 4 == 0) && ($Year % 100 != 0)) || ($Year % 400 == 0) ))
+then
+        echo $Year "Leap Year"
+else
+        echo $Year "Not a Leap Year"
+
+fi
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ls
+'0.Bash shell commands .txt'   coin_head_or_tail.sh*   day_of_month.sh*   max_min_3digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ touch leap_year.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ls
+'0.Bash shell commands .txt'   coin_head_or_tail.sh*   day_of_month.sh*   leap_year.sh   max_min_3digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ nano leap_year.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./leap_year.sh
++ read -p ' Enter year to check wether it is Leap or Not :- ' Year
+ Enter year to check wether it is Leap or Not :- 1600
++ ((  ((1600 % 4 == 0) && (1600 % 100 != 0)) || (1600 % 400 == 0)  ))
++ echo 1600 'Leap Year'
+1600 Leap Year
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./leap_year.sh
++ read -p ' Enter year to check wether it is Leap or Not :- ' Year
+ Enter year to check wether it is Leap or Not :- 1900
++ ((  ((1900 % 4 == 0) && (1900 % 100 != 0)) || (1900 % 400 == 0)  ))
++ echo 1900 'Not a Leap Year'
+1900 Not a Leap Year
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./leap_year.sh
++ read -p ' Enter year to check wether it is Leap or Not :- ' Year
+ Enter year to check wether it is Leap or Not :- 1904
++ ((  ((1904 % 4 == 0) && (1904 % 100 != 0)) || (1904 % 400 == 0)  ))
++ echo 1904 'Leap Year'
+1904 Leap Year
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./leap_year.sh
++ read -p ' Enter year to check wether it is Leap or Not :- ' Year
+ Enter year to check wether it is Leap or Not :- 1902
++ ((  ((1902 % 4 == 0) && (1902 % 100 != 0)) || (1902 % 400 == 0)  ))
++ echo 1902 'Not a Leap Year'
+1902 Not a Leap Year
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./leap_year.sh
++ read -p ' Enter year to check wether it is Leap or Not :- ' Year
+ Enter year to check wether it is Leap or Not :- 2100
++ ((  ((2100 % 4 == 0) && (2100 % 100 != 0)) || (2100 % 400 == 0)  ))
++ echo 2100 'Not a Leap Year'
+2100 Not a Leap Year
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./leap_year.sh
++ read -p ' Enter year to check wether it is Leap or Not :- ' Year
+ Enter year to check wether it is Leap or Not :- 1900
++ ((  ((1900 % 4 == 0) && (1900 % 100 != 0)) || (1900 % 400 == 0)  ))
++ echo 1900 'Not a Leap Year'
+1900 Not a Leap Year
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./leap_year.sh
++ read -p ' Enter year to check wether it is Leap or Not :- ' Year
+ Enter year to check wether it is Leap or Not :- 2300
++ ((  ((2300 % 4 == 0) && (2300 % 100 != 0)) || (2300 % 400 == 0)  ))
++ echo 2300 'Not a Leap Year'
+2300 Not a Leap Year
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./leap_year.sh
++ read -p ' Enter year to check wether it is Leap or Not :- ' Year
+ Enter year to check wether it is Leap or Not :- 2304
++ ((  ((2304 % 4 == 0) && (2304 % 100 != 0)) || (2304 % 400 == 0)  ))
++ echo 2304 'Leap Year'
+2304 Leap Year
+
+## 3. Write a program that takes a year as input and outputs the Year is a Leap Year or not
+##     a Leap Year. A Leap Year checks for 4 Digit Number, Divisible by 4 and not 100 unless
+##     divisible by 400.  END
+
+
+
+## 4. Write a program to simulate a coin flip and print out "Heads" or "Tails" accordingly. START
+
+>>>>>
+#! /bin/bash/ -x
+
+coin_flip=$((RANDOM%2))
+
+if [ $coin_flip -eq 1 ]
+then
+echo "Head"
+
+else
+echo "Tail"
+
+fi
+>>>>>
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+'0. Bash shell commands .txt'   case_head_or_tail.sh*   head_or_tail.sh*
+ Sequence_Practice_Problems/    case_single_digit.sh*   random_day_in_week.sh*
+ case_day_in_week.sh*           function.sh*            random_single_digit.sh*
+ case_greater_or_not.sh         greater_or_not.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ mkdir Selection_Practise_Problems
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+'0. Bash shell commands .txt'   case_greater_or_not.sh   greater_or_not.sh*
+ Selection_Practise_Problems/   case_head_or_tail.sh*    head_or_tail.sh*
+ Sequence_Practice_Problems/    case_single_digit.sh*    random_day_in_week.sh*
+ case_day_in_week.sh*           function.sh*             random_single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ cd Selection_Practise_Problems/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ls
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ touch coin_head_or_tail.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ nano coin_head_or_tail.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./coin_head_or_tail.sh
++ coin_flip=0
++ '[' 0 -eq 1 ']'
++ echo Tail
+Tail
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./coin_head_or_tail.sh
++ coin_flip=0
++ '[' 0 -eq 1 ']'
++ echo Tail
+Tail
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./coin_head_or_tail.sh
++ coin_flip=0
++ '[' 0 -eq 1 ']'
++ echo Tail
+Tail
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./coin_head_or_tail.sh
++ coin_flip=1
++ '[' 1 -eq 1 ']'
++ echo Head
+Head
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Selection_Practise_Problems
+$ ./coin_head_or_tail.sh
++ coin_flip=1
++ '[' 1 -eq 1 ']'
++ echo Head
+Head
+
+## ## 4. Write a program to simulate a coin flip and print out "Heads" or "Tails" accordingly. END
+
+		## if else END ##

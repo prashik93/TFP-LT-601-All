@@ -1,0 +1,1356 @@
+
+## Random_single_digit.sh Using if else START
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop
+$ cd Day-05_Sequences_Practice_Problems/
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+greater_or_not.sh  head_or_tail.sh  random_single_digit
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano random_single_digit
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ mv random_single_digit random_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+greater_or_not.sh  head_or_tail.sh  random_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano random_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=0
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ '[' 0 -eq 7 ']'
++ '[' 0 -eq 8 ']'
++ '[' 0 -eq 9 ']'
++ echo 'Number is Zero'
+Number is Zero
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=3
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ echo 'Number is Three'
+Number is Three
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=3
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ echo 'Number is Three'
+Number is Three
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=2
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ echo 'Number is Two'
+Number is Two
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=2
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ echo 'Number is Two'
+Number is Two
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=0
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ '[' 0 -eq 7 ']'
++ '[' 0 -eq 8 ']'
++ '[' 0 -eq 9 ']'
++ echo 'Number is Zero'
+Number is Zero
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=7
++ '[' 7 -eq 1 ']'
++ '[' 7 -eq 2 ']'
++ '[' 7 -eq 3 ']'
++ '[' 7 -eq 4 ']'
++ '[' 7 -eq 5 ']'
++ '[' 7 -eq 6 ']'
++ '[' 7 -eq 7 ']'
++ echo 'Number is Seven'
+Number is Seven
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=0
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ '[' 0 -eq 7 ']'
++ '[' 0 -eq 8 ']'
++ '[' 0 -eq 9 ']'
++ echo 'Number is Zero'
+Number is Zero
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=5
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ echo 'Number is Five'
+Number is Five
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=8
++ '[' 8 -eq 1 ']'
++ '[' 8 -eq 2 ']'
++ '[' 8 -eq 3 ']'
++ '[' 8 -eq 4 ']'
++ '[' 8 -eq 5 ']'
++ '[' 8 -eq 6 ']'
++ '[' 8 -eq 7 ']'
++ '[' 8 -eq 8 ']'
++ echo 'Number is Eight'
+Number is Eight
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=0
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ '[' 0 -eq 7 ']'
++ '[' 0 -eq 8 ']'
++ '[' 0 -eq 9 ']'
++ echo 'Number is Zero'
+Number is Zero
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=5
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ echo 'Number is Five'
+Number is Five
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=4
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ echo 'Number is Four'
+Number is Four
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=7
++ '[' 7 -eq 1 ']'
++ '[' 7 -eq 2 ']'
++ '[' 7 -eq 3 ']'
++ '[' 7 -eq 4 ']'
++ '[' 7 -eq 5 ']'
++ '[' 7 -eq 6 ']'
++ '[' 7 -eq 7 ']'
++ echo 'Number is Seven'
+Number is Seven
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=3
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ echo 'Number is Three'
+Number is Three
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=5
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ echo 'Number is Five'
+Number is Five
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo 'Number is Six'
+Number is Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo 'Number is Six'
+Number is Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=0
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ '[' 0 -eq 7 ']'
++ '[' 0 -eq 8 ']'
++ '[' 0 -eq 9 ']'
++ echo 'Number is Zero'
+Number is Zero
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo 'Number is Six'
+Number is Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=4
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ echo 'Number is Four'
+Number is Four
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=9
++ '[' 9 -eq 1 ']'
++ '[' 9 -eq 2 ']'
++ '[' 9 -eq 3 ']'
++ '[' 9 -eq 4 ']'
++ '[' 9 -eq 5 ']'
++ '[' 9 -eq 6 ']'
++ '[' 9 -eq 7 ']'
++ '[' 9 -eq 8 ']'
++ '[' 9 -eq 9 ']'
++ echo 'Number is Nine'
+Number is Nine
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=9
++ '[' 9 -eq 1 ']'
++ '[' 9 -eq 2 ']'
++ '[' 9 -eq 3 ']'
++ '[' 9 -eq 4 ']'
++ '[' 9 -eq 5 ']'
++ '[' 9 -eq 6 ']'
++ '[' 9 -eq 7 ']'
++ '[' 9 -eq 8 ']'
++ '[' 9 -eq 9 ']'
++ echo 'Number is Nine'
+Number is Nine
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano random_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano random_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_single_digit.sh
++ single_digit=7
++ '[' 7 -eq 1 ']'
++ '[' 7 -eq 2 ']'
++ '[' 7 -eq 3 ']'
++ '[' 7 -eq 4 ']'
++ '[' 7 -eq 5 ']'
++ '[' 7 -eq 6 ']'
++ '[' 7 -eq 7 ']'
++ echo 'Number is Seven'
+Number is Seven
+
+## Random_single_digit.sh Using if else  END
+
+
+## Case_single_digit.sh Using Case START
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+greater_or_not.sh  head_or_tail.sh  random_single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano case_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+case_single_digit.sh  greater_or_not.sh  head_or_tail.sh  random_single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano case_single_digit.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=1
++ case $digitCheck in
++ echo One
+One
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=4
++ case $digitCheck in
++ echo Four
+Four
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=1
++ case $digitCheck in
++ echo One
+One
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=6
++ case $digitCheck in
++ echo Six
+Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=5
++ case $digitCheck in
++ echo Five
+Five
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=8
++ case $digitCheck in
++ echo Eight
+Eight
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=4
++ case $digitCheck in
++ echo Four
+Four
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=4
++ case $digitCheck in
++ echo Four
+Four
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=3
++ case $digitCheck in
++ echo Three
+Three
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=6
++ case $digitCheck in
++ echo Six
+Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=9
++ case $digitCheck in
++ echo Nine
+Nine
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=6
++ case $digitCheck in
++ echo Six
+Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=9
++ case $digitCheck in
++ echo Nine
+Nine
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=1
++ case $digitCheck in
++ echo One
+One
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=8
++ case $digitCheck in
++ echo Eight
+Eight
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=9
++ case $digitCheck in
++ echo Nine
+Nine
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=8
++ case $digitCheck in
++ echo Eight
+Eight
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=3
++ case $digitCheck in
++ echo Three
+Three
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=0
++ case $digitCheck in
++ echo Zero
+Zero
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_single_digit.sh
++ digitCheck=8
++ case $digitCheck in
++ echo Eight
+Eight
+
+## Case_single_digit.sh Using Case END
+
+
+
+## Case_head_or_tail.sh Using Case START
+
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+case_single_digit.sh*  greater_or_not.sh  head_or_tail.sh  random_single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano -T 3 case_head_or_tail.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano -T 3 case_head_or_tail.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_head_or_tail.sh
++ toss=1
++ case $toss in
++ echo Heads
+Heads
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_head_or_tail.sh
++ toss=1
++ case $toss in
++ echo Heads
+Heads
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_head_or_tail.sh
++ toss=0
++ case $toss in
++ echo Tails
+Tails
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_head_or_tail.sh
++ toss=1
++ case $toss in
++ echo Heads
+Heads
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_head_or_tail.sh
++ toss=0
++ case $toss in
++ echo Tails
+Tails
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_head_or_tail.sh
++ toss=0
++ case $toss in
++ echo Tails
+Tails
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_head_or_tail.sh
++ toss=0
++ case $toss in
++ echo Tails
+Tails
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_head_or_tail.sh
++ toss=1
++ case $toss in
++ echo Heads
+Heads
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_head_or_tail.sh
++ toss=0
++ case $toss in
++ echo Tails
+Tails
+
+## Case_head_or_tail.sh Using Case END
+
+
+## Random_day_in_week.sh Using if else START
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano random_day_in_week.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=5
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ echo Friday
+Friday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=4
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ echo Thursday
+Thursday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=1
++ '[' 1 -eq 1 ']'
++ echo Monday
+Monday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=7
++ '[' 7 -eq 1 ']'
++ '[' 7 -eq 2 ']'
++ '[' 7 -eq 3 ']'
++ '[' 7 -eq 4 ']'
++ '[' 7 -eq 5 ']'
++ '[' 7 -eq 6 ']'
++ echo Sunday
+Sunday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=7
++ '[' 7 -eq 1 ']'
++ '[' 7 -eq 2 ']'
++ '[' 7 -eq 3 ']'
++ '[' 7 -eq 4 ']'
++ '[' 7 -eq 5 ']'
++ '[' 7 -eq 6 ']'
++ echo Sunday
+Sunday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=1
++ '[' 1 -eq 1 ']'
++ echo Monday
+Monday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=5
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ echo Friday
+Friday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=4
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ echo Thursday
+Thursday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=5
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ echo Friday
+Friday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=7
++ '[' 7 -eq 1 ']'
++ '[' 7 -eq 2 ']'
++ '[' 7 -eq 3 ']'
++ '[' 7 -eq 4 ']'
++ '[' 7 -eq 5 ']'
++ '[' 7 -eq 6 ']'
++ echo Sunday
+Sunday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./random_day_in_week.sh
++ day=6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ echo Saturday
+Saturday
+
+## Random_day_in_week.sh Using if else END
+
+
+## Case_day_in_week.sh Using Case START
+
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+case_greater_or_not.sh  case_single_digit.sh*  head_or_tail.sh*        random_single_digit.sh*
+case_head_or_tail.sh*   greater_or_not.sh*     random_day_in_week.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano case_day_in_week.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+case_day_in_week.sh*    case_head_or_tail.sh*  greater_or_not.sh*  random_day_in_week.sh*
+case_greater_or_not.sh  case_single_digit.sh*  head_or_tail.sh*    random_single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano -T 3 case_day_in_week.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=4
++ case $day in
++ echo Thursday
+Thursday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=6
++ case $day in
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=6
++ case $day in
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=5
++ case $day in
++ echo Friday
+Friday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=1
++ case $day in
++ echo Monday
+Monday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=4
++ case $day in
++ echo Thursday
+Thursday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=1
++ case $day in
++ echo Monday
+Monday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano case_day_in_week.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=1
++ case $day in
++ echo Monday
+Monday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=2
++ case $day in
++ echo Tuesday
+Tuesday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=1
++ case $day in
++ echo Monday
+Monday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=6
++ case $day in
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=4
++ case $day in
++ echo Thursday
+Thursday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=2
++ case $day in
++ echo Tuesday
+Tuesday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=4
++ case $day in
++ echo Thursday
+Thursday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=6
++ case $day in
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=5
++ case $day in
++ echo Friday
+Friday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=5
++ case $day in
++ echo Friday
+Friday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=4
++ case $day in
++ echo Thursday
+Thursday
+
+
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=3
++ case $day in
++ echo Wednesday
+Wednesday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano case_day_in_week.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=5
++ case $day in
++ echo Friday
+Friday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=0
++ case $day in
++ echo Sunday
+Sunday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=3
++ case $day in
++ echo Wednesday
+Wednesday
+
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=3
++ case $day in
++ echo Wednesday
+Wednesday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=0
++ case $day in
++ echo Sunday
+Sunday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=6
++ case $day in
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=6
++ case $day in
++ echo Saturday
+Saturday
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./case_day_in_week.sh
++ day=3
++ case $day in
++ echo Wednesday
+Wednesday
+
+## Case_day_in_week.sh Using Case END
+
+
+
+## Function.sh START
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+case_day_in_week.sh*    case_head_or_tail.sh*  greater_or_not.sh*  random_day_in_week.sh*
+case_greater_or_not.sh  case_single_digit.sh*  head_or_tail.sh*    random_single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano function.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ls
+case_day_in_week.sh*    case_single_digit.sh*  head_or_tail.sh*
+case_greater_or_not.sh  function.sh*           random_day_in_week.sh*
+case_head_or_tail.sh*   greater_or_not.sh*     random_single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano -T 3 function.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./function.sh
++ echo 'Before function call'
+Before function call
++ myfunction
++ echo 'Hello World'
+Hello World
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano function.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./function.sh
++ echo 'Before function call'
+Before function call
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ nano function.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems
+$ ./function.sh
++ echo 'Before function call'
+Before function call
++ myfunction
++ echo 'Hello World'
+Hello World
+
+## Function.sh END
+
+
+## Dice_number.sh Using if else START 
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ls
+case_single_digit.sh*  single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ touch dice_number.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ls
+case_single_digit.sh*  dice_number.sh  single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ nano dice_number.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ nano dice_number.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./dice_number.sh
++ dice_number=5
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ echo Five
+Five
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./dice_number.sh
++ dice_number=5
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ echo Five
+Five
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./dice_number.sh
++ dice_number=4
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ echo Four
+Four
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./dice_number.sh
++ dice_number=2
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ echo Two
+Two
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./dice_number.sh
++ dice_number=3
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ echo Three
+Three
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./dice_number.sh
++ dice_number=4
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ echo Four
+Four
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./dice_number.sh
++ dice_number=1
++ '[' 1 -eq 1 ']'
++ echo One
+One
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./dice_number.sh
++ dice_number=2
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ echo Two
+Two
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./dice_number.sh
++ dice_number=6
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ echo Six
+Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./dice_number.sh
++ dice_number=1
++ '[' 1 -eq 1 ']'
++ echo One
+One
+
+## Dice_number.sh Using if else END
+
+
+
+## Case_dice_number.sh Using Case START
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ls
+case_single_digit.sh*  dice_number.sh*  single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ touch case_dice_number.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ls
+case_dice_number.sh  case_single_digit.sh*  dice_number.sh*  single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ nano -T 3 case_dice_number.sh
+
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./case_dice_number.sh
++ dice_number=2
++ case $dice_number in
++ echo Two
+Two
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./case_dice_number.sh
++ dice_number=6
++ case $dice_number in
++ echo Six
+Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./case_dice_number.sh
++ dice_number=3
++ case $dice_number in
++ echo Three
+Three
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./case_dice_number.sh
++ dice_number=4
++ case $dice_number in
++ echo Four
+Four
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./case_dice_number.sh
++ dice_number=6
++ case $dice_number in
++ echo Six
+Six
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./case_dice_number.sh
++ dice_number=1
++ case $dice_number in
++ echo One
+One
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./case_dice_number.sh
++ dice_number=2
++ case $dice_number in
++ echo Two
+Two
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./case_dice_number.sh
++ dice_number=3
++ case $dice_number in
++ echo Three
+Three
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./case_dice_number.sh
++ dice_number=5
++ case $dice_number in
++ echo Five
+Five
+
+## Case_dice_number.sh Using Case END
+
+
+
+## Two_dice_add_number.sh START
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ls
+case_dice_number.sh*  case_single_digit.sh*  dice_number.sh*  single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ touch two_dice_add_number.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ls
+case_dice_number.sh*   dice_number.sh*   two_dice_add_number.sh
+case_single_digit.sh*  single_digit.sh*
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ nano two_dice_add_number.sh
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=5
++ second_dice=1
++ add=6
++ echo 6
+6
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=6
++ second_dice=4
++ add=10
++ echo 10
+10
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=3
++ second_dice=2
++ add=5
++ echo 5
+5
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=5
++ second_dice=5
++ add=10
++ echo 10
+10
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=5
++ second_dice=5
++ add=10
++ echo 10
+10
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=5
++ second_dice=2
++ add=7
++ echo 7
+7
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=6
++ second_dice=3
++ add=9
++ echo 9
+9
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=5
++ second_dice=3
++ add=8
++ echo 8
+8
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=6
++ second_dice=6
++ add=12
++ echo 12
+12
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=5
++ second_dice=1
++ add=6
++ echo 6
+6
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=2
++ second_dice=1
++ add=3
++ echo 3
+3
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=4
++ second_dice=6
++ add=10
++ echo 10
+10
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=2
++ second_dice=6
++ add=8
++ echo 8
+8
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=5
++ second_dice=6
++ add=11
++ echo 11
+11
+
+INTEL@DESKTOP-6MVPNNQ MINGW64 ~/Desktop/Day-05_Sequences_Practice_Problems/Sequence_Practice_Problems
+$ ./two_dice_add_number.sh
++ first_dice=3
++ second_dice=6
++ add=9
++ echo 9
+9
+
+## Two_dice_add_number.sh END
+
+
+
+
